@@ -1,0 +1,40 @@
+.tasks-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tasks-table th, .tasks-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .tasks-table .task-title {
+    font-weight: bold;
+  }
+  
+  .tasks-table .task-subtitle {
+    color: #666;
+  }
+  
+  .priority {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .low-priority {
+    background-color: #dff0d8;
+    color: #3c763d;
+  }
+  
+  .medium-priority {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+  }
+  
+  .high-priority {
+    background-color: #f2dede;
+    color: #a94442;
+  }
+  
