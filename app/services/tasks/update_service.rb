@@ -19,6 +19,7 @@ module Tasks
     end
 
     def validate_due_date
+      return unless params[:due_date]
       raise 'The due date must be greater than the current time' if due_date < Time.now()
     end
 
@@ -27,8 +28,7 @@ module Tasks
       task.subtitle = params[:subtitle] if params[:subtitle]
       task.due_date = due_date if params[:due_date]
       task.priority = params[:priority] if params[:priority]
-      task.completed = params[:completed] if params[:completed]
-
+      task.completed = params[:completed] unless params[:completed].nil?
       task.save!
     end
 

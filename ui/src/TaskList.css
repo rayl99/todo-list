@@ -1,0 +1,92 @@
+/* src/TaskList.css */
+.task-list {
+    width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .task-list h1 {
+    text-align: left;
+  }
+  
+  .task {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+  }
+  
+  .task-details {
+    margin-left: 10px;
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+  
+  .task-title {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .task-subtitle {
+    margin: 5px 0;
+  }
+  
+  .priority {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tag {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    padding: 7px 0;
+  }
+
+  .center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .high {
+    background-color: #ffcccc;
+    color: #cc0000;
+    font-size: 12px;
+  }
+  
+  .medium {
+    background-color: #ffecb3;
+    color: #ff9800;
+    font-size: 12px;
+  }
+  
+  .low {
+    background-color: #ccffcc;
+    color: #009933;
+    font-size: 12px;
+  }
+  
+  .due-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+
+  .remove-btn {
+    border: none;
+    background-color: transparent;
+  }
+
+  .checkbox {
+    transform: scale(1.5);
+  }
